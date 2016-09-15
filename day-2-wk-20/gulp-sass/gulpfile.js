@@ -13,7 +13,7 @@ gulp.task('sass', function () {
 gulp.task('start', ["sass"], function () {
   nodemon({
     script: 'server.js'
-  , ext: 'js html'
+  , ext: 'js html css'
   , env: { 'NODE_ENV': 'development' }
   })
 })
